@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF8">
+  <title>Sugeatoes/contato</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="titulo_sugestoes">
+    <h1 style="text-align: center">Sugestões/Contato</h1>
+    <p>Mande-nos sugestões e nos siga nas redes sociais</p>
+  </div>
+  <div>
+    <h2 id="titulo_form">Informações sobre seus dados</h2>
+    <p id="subtitulo">insira seus dados</p>
+  </div>
+  <form class="formulario">
+    <fieldset class="grupo">
+      <div class="campo">
+        <label for="nome"><strong>Nome</strong></label>
+        <input type="text" name="nome" id="nome">
+      </div>
+      <div class="campo">
+        <label for="sobrenome"><strong>Sobrenome</strong></label>
+        <input type="text" name="sobrenome" id="sobrenome">
+      </div>
+    </fieldset>
+    <div class="campo">
+      <label for="email"><strong>Email</strong></label>
+      <input type="email" name="email" id="email">
+    </div>
+    <div class="campo">
+      <label><strong>Qual o seu sexo?</strong></label>
+      <label>
+        <input type="radio" name="sexo" value="masculino" checked>Masculino
+      </label>
+      <label>
+        <input type="radio" name="sexo" value="feminino">feminino
+      </label>
+
+    </div>
+    <div class="campo">
+      <label><strong>Nível de intrução</strong> </label>
+      <select id="nivel">
+        <option selected disabled value=""></option>
+        <option>Iniciante</option>
+        <option>Intermediário</option>
+        <option>Avançado</option>
+      </select>
+    </div>
+    <fieldset class="grupo">
+      <div class="campo">
+        <label>Selecione modalidades do seu interesse</label>
+        <input type="checkbox" id="opc1" name="opc1" value="Musculação">
+        <label for="opc1">Musculação</label>
+        <input type="checkbox" id="opc2" name="opc2" value="Calistenia">
+        <label for="opc3">Calistenia</label>
+        <input type="checkbox" id="opc3" name="opc3" value="Crossfit">
+        <label for="opc3">Crossfit</label>
+      </div>
+    </fieldset>
+    <button class="botao_form" type="submit">Enviar</button>
+  </form>
+  <div>
+    <button class="botão_sugestoes_voltar"><a href="./index.html">Voltar</a></button>
+
+  </div>
+</body>
+
+</html>
