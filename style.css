@@ -270,6 +270,43 @@ fieldset.grupo .campo {
   font-size: 50px;
 }
 
+.pseudo_paragrafo{
+   font-size: 20px;
+   text-align: center;
+}
+.pseudo_paragrafo::first-letter{
+  color: red;
+  font-size: 40px;
+  font-family: arial;
+}
+
+.pseudo_link{
+   font-size: 20px;
+   display: block;
+   text-align: center;
+   text-decoration: none;
+   font-family: arial; 
+   font-weight: bold;
+ }
+ .pseudo_link:hover{
+  text-decoration: underline;
+  color: black;
+ }
+
+ .pseudo_link::before{
+   content: '⇨';
+   font-size: 25px;
+   text-decoration: none;
+   font-weight: normal;
+   color: darkgray;
+ }
+ .pseudo_link::after{
+   content: '[link]';
+   text-decoration: none;
+   font-weight: normal;
+   color: darkgray;
+ }
+
 
 /*tipi_de_treino*/
 .titulo_treino {
